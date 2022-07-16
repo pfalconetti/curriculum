@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../../assets/images/logo.svg';
 import './App.scss';
+import SimpleDonut from '../SimpleDonut/SimpleDonut';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         >
           Learn React
         </a>
+        <SimpleDonut />
       </header>
     </div>
   );
