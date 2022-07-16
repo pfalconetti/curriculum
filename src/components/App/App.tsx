@@ -14,6 +14,7 @@ function App() {
           <SimpleDonut />
         </div>
         <div className="chart-wrapper">
+          <h2>Expérience professionnelle</h2>
           <PrettyDonut />
         </div>
       </div>

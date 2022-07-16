@@ -1,32 +1,62 @@
 [
   {
-    "id": "python",
-    "label": "python",
-    "value": 447,
-    "color": "hsl(335, 70%, 50%)"
+    "id": "Peut-être vous...",
+    "label": "?",
+    "value": 3
   },
   {
-    "id": "java",
-    "label": "java",
-    "value": 498,
-    "color": "hsl(73, 70%, 50%)"
+    "id": "Sage",
+    "label": "Sage",
+    "value": 61
   },
   {
-    "id": "rust",
-    "label": "rust",
-    "value": 182,
-    "color": "hsl(123, 70%, 50%)"
+    "id": "Linkbynet",
+    "label": "Linkbynet",
+    "value": 9
   },
   {
-    "id": "stylus",
-    "label": "stylus",
-    "value": 152,
-    "color": "hsl(8, 70%, 50%)"
+    "id": "H.S.D.",
+    "label": "Hic Sunt Dev",
+    "value": 9
   },
   {
-    "id": "haskell",
-    "label": "haskell",
-    "value": 131,
-    "color": "hsl(6, 70%, 50%)"
+    "id": "Agarik",
+    "label": "Agarik, grp Atos-Bull",
+    "value": 84
+  },
+  {
+    "id": "S.E.S.",
+    "label": "Store Electronic Systems",
+    "value": 12
+  },
+  {
+    "id": "Claranet",
+    "label": "Claranet Artful",
+    "value": 36
+  },
+  {
+    "id": "auto-entrepreneur",
+    "label": "freelance",
+    "value": 18
+  },
+  {
+    "id": "D.A.I.I.",
+    "label": "D.A.I.I.",
+    "value": 15
+  },
+  {
+    "id": "Long²",
+    "label": "EURL Long² studio",
+    "value": 36
+  },
+  {
+    "id": "divers",
+    "label": "interim divers",
+    "value": 21
+  },
+  {
+    "id": "J'Annonce",
+    "label": "J'Annonce, grp Hebdomag",
+    "value": 12
   }
 ]
