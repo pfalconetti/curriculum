@@ -1,0 +1,32 @@
+[
+  {
+    "id": "python",
+    "label": "python",
+    "value": 447,
+    "color": "hsl(335, 70%, 50%)"
+  },
+  {
+    "id": "java",
+    "label": "java",
+    "value": 498,
+    "color": "hsl(73, 70%, 50%)"
+  },
+  {
+    "id": "rust",
+    "label": "rust",
+    "value": 182,
+    "color": "hsl(123, 70%, 50%)"
+  },
+  {
+    "id": "stylus",
+    "label": "stylus",
+    "value": 152,
+    "color": "hsl(8, 70%, 50%)"
+  },
+  {
+    "id": "haskell",
+    "label": "haskell",
+    "value": 131,
+    "color": "hsl(6, 70%, 50%)"
+  }
+]

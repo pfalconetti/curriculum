@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../../assets/images/logo.svg';
 import './App.scss';
 import SimpleDonut from '../SimpleDonut/SimpleDonut';
+import PrettyDonut from '../PrettyDonut/PrettyDonut';
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
           Learn React
         </a>
         <SimpleDonut />
+        <div className="pretty-donut">
+          <PrettyDonut />
+        </div>
       </header>
     </div>
   );
