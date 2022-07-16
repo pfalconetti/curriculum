@@ -1,30 +1,25 @@
 import React from 'react';
-import logo from '../../assets/images/logo.svg';
-import './App.scss';
 import SimpleDonut from '../SimpleDonut/SimpleDonut';
 import PrettyDonut from '../PrettyDonut/PrettyDonut';
+import './App.scss';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <SimpleDonut />
-        <div className="pretty-donut">
+        Header
+      </header>
+      <div className="App-content">
+        <div className="chart-wrapper">
+          <SimpleDonut />
+        </div>
+        <div className="chart-wrapper">
           <PrettyDonut />
         </div>
-      </header>
+      </div>
+      <footer className="App-footer">
+        Footer
+      </footer>
     </div>
   );
 }

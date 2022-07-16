@@ -12,7 +12,7 @@ import data from "../../assets/data/prettyDonutData.json";
 // no chart will be rendered.
 // website examples showcase many properties,
 // you'll often use just a few of them.
-export default function PrettyDonu() {
+function PrettyDonut() {
   return (
     <ResponsivePie
       data={data}
@@ -143,3 +143,5 @@ export default function PrettyDonu() {
     />
   );
 }
+
+export default PrettyDonut;

@@ -77,7 +77,7 @@ const renderActiveShape = (props: any) => {
   );
 };
 
-export default function SimpleDonut() {
+function SimpleDonut() {
   const [activeIndex, setActiveIndex] = useState(0);
   const onPieEnter = useCallback(
     (_: any, index: any) => {
@@ -103,3 +103,5 @@ export default function SimpleDonut() {
     </PieChart>
   );
 }
+
+export default SimpleDonut;
