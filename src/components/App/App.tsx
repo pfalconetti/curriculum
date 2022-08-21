@@ -1,7 +1,6 @@
 import React from 'react';
 import SimpleDonut from '../SimpleDonut/SimpleDonut';
 import PrettyDonut from '../PrettyDonut/PrettyDonut';
-import HexaBg from '../HexagonsBg/HexagonsBg';
 import './App.scss';
 import { useTranslation } from "react-i18next";
 
@@ -36,7 +35,6 @@ function App() {
       <footer className="App-footer">
         Footer
       </footer>
-      <HexaBg />
     </div>
   );
 }
