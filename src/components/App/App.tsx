@@ -1,6 +1,7 @@
 import React from 'react';
 import SimpleDonut from '../SimpleDonut/SimpleDonut';
 import PrettyDonut from '../PrettyDonut/PrettyDonut';
+import Sunburst from '../Sunburst/Sunburst';
 import './App.scss';
 import { useTranslation } from "react-i18next";
 
@@ -30,6 +31,10 @@ function App() {
         <div className="chart-wrapper">
           <h2>{t('professional experience')}</h2>
           <PrettyDonut />
+        </div>
+        <div className="chart-wrapper">
+          <h2>{t('assignments')}</h2>
+          <Sunburst />
         </div>
       </div>
       <footer className="App-footer">
