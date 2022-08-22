@@ -4,7 +4,7 @@ import React from "react";
 
 // install (please make sure versions match peerDependencies)
 // yarn add @nivo/core @nivo/pie
-import { ResponsivePie } from '@nivo/pie'
+import { ResponsivePie } from '@nivo/pie';
 import data from "../../assets/data/prettyDonutData.json";
 
 // make sure parent container have a defined height when using

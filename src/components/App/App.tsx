@@ -30,10 +30,12 @@ function App() {
         </div>
         <div className="chart-wrapper">
           <h2>{t('professional experience')}</h2>
+          <h3>&#123; chez qui j'ai travaillé &#125;</h3>
           <PrettyDonut />
         </div>
         <div className="chart-wrapper">
           <h2>{t('assignments')}</h2>
+          <h3>&#123; ce que j'ai fait &#125;</h3>
           <Sunburst />
         </div>
       </div>
