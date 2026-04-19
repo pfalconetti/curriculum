@@ -1,8 +1,20 @@
 :root {
-  color-scheme: light;
+  --primary: #32cd32; // Lime green
+  --grey-900: #1a1a1a;
+  --grey-800: #333333;
+  --grey-700: #4d4d4d;
+  --grey-600: #666666;
+  --grey-500: #808080;
+  --grey-400: #999999;
+  --grey-300: #b3b3b3;
+  --grey-200: #cccccc;
+  --grey-100: #e6e6e6;
+  --grey-50: #f5f5f5;
+
+  color-scheme: dark;
   font-family: Inter, system-ui, sans-serif;
-  background: #f7fafc;
-  color: #111827;
+  background: var(--grey-900);
+  color: white;
 }
 
 * {
@@ -21,11 +33,11 @@ body {
 .app-shell {
   max-width: 720px;
   margin: 0 auto;
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
+  background: var(--grey-800);
+  border: 1px solid var(--grey-700);
   border-radius: 18px;
   padding: 2rem;
-  box-shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+  box-shadow: 0 18px 50px rgba(26, 26, 26, 0.3);
 }
 
 .app-header {
@@ -37,7 +49,7 @@ body {
 
   p {
     margin: 0;
-    color: #475569;
+    color: var(--grey-400);
   }
 }
 
@@ -63,12 +75,12 @@ body {
     padding: 0.75rem 1rem;
     border: none;
     border-radius: 9999px;
-    background: #2563eb;
+    background: var(--primary);
     color: white;
     cursor: pointer;
 
     &:hover {
-      background: #1d4ed8;
+      background: #c4f804; // Lighter lime
     }
   }
 }
