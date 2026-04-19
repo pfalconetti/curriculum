@@ -1,22 +1,29 @@
 import { useTranslation } from 'react-i18next';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import CardsStack from './components/CardsStack/CardsStack';
 
 export default function App() {
   const { t, i18n } = useTranslation();
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
+  const animationRef = useRef<number>();
+  const timeRef = useRef(0);
 
   useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      const centerX = window.innerWidth / 2;
-      const centerY = window.innerHeight / 2;
-      const x = (e.clientX - centerX) / centerX;
-      const y = (e.clientY - centerY) / centerY;
-      setRotation({ x: y * -10, y: x * 10 }); // Adjust sensitivity
+    const animate = () => {
+      timeRef.current += 0.002; // Speed of animation
+      const x = Math.sin(timeRef.current) * 10 + Math.sin(timeRef.current * 0.5) * 5; // Combine waves for spline-like motion
+      const y = Math.cos(timeRef.current * 1.2) * 8 + Math.cos(timeRef.current * 0.3) * 3;
+      setRotation({ x, y });
+      animationRef.current = requestAnimationFrame(animate);
     };
 
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
+    animationRef.current = requestAnimationFrame(animate);
+
+    return () => {
+      if (animationRef.current) {
+        cancelAnimationFrame(animationRef.current);
+      }
+    };
   }, []);
 
   const switchLanguage = (language: string) => {
