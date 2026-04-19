@@ -1,4 +1,8 @@
 {
+  "welcome": "Welcome to the multilingual React app",
+  "description": "Use the buttons below to switch between English and French.",
+  "current_language": "Current language",
+  "switch_language": "Switch language",
   "assignments": "assignments",
   "name": "name",
   "professional experience": "professional experience"

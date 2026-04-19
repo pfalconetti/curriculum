@@ -1,4 +1,8 @@
 {
+  "welcome": "Bienvenue dans l'application React multilingue",
+  "description": "Utilisez les boutons ci-dessous pour passer de l'anglais au français.",
+  "current_language": "Langue actuelle",
+  "switch_language": "Changer de langue",
   "assignments": "affectations",
   "name": "nom",
   "professional experience": "experience professionnelle"

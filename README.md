@@ -1,46 +1,55 @@
-# Graphical React Curriculum
+# React Multilingual App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains a simple multilingual React application built with Vite, React 18, and `react-i18next`.
 
-## Available Scripts
+## What it is
 
-In the project directory, you can run:
+- A minimal React app located in `src/`
+- Uses `i18next` and `react-i18next` for English / French translation support
+- Includes a language switcher that toggles between `en` and `fr`
+- Built with Vite for fast development and production bundling
 
-### `npm start`
+## Key files
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- `src/main.tsx` — React app bootstrap
+- `src/App.tsx` — main application component
+- `src/i18n.ts` — i18n initialization and language resources
+- `src/index.css` — app styling
+- `src/locales/en/translation.json` — English translations
+- `src/locales/fr/translation.json` — French translations
+- `vite.config.ts` — Vite config
+- `tsconfig.json` / `tsconfig.node.json` — TypeScript config
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Setup
 
-### `npm test`
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Start development server:
+   ```bash
+   npm run dev
+   ```
 
-### `npm run build`
+3. Build for production:
+   ```bash
+   npm run build
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Preview the production build:
+   ```bash
+   npm run preview
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Notes
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- This project follows the rules in `RULES.md`.
+- No Git commands were executed unless explicitly requested.
+- The app was successfully installed and built in the current directory.
+- A dependency audit warning was present after install, so run `npm audit` if you want to inspect package security issues.
 
-### `npm run eject`
+## Security / dependency notice
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- The repository is scoped to this directory (`d:\Projects\CV_web`).
+- If additional dependency or security concerns are found, they should be documented and addressed separately.
