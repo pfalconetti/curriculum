@@ -28,6 +28,7 @@ body {
 
 #root {
   padding: 2rem;
+  perspective: 1000px; // Add 3D perspective
 }
 
 .app-shell {
@@ -38,6 +39,7 @@ body {
   border-radius: 18px;
   padding: 2rem;
   box-shadow: 0 18px 50px rgba(26, 26, 26, 0.3);
+  transform-style: preserve-3d; // Preserve 3D transforms for children
 }
 
 .app-header {
