@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import CardsStack from './components/CardsStack/CardsStack';
 
 export default function App() {
   const { t, i18n } = useTranslation();
@@ -28,12 +29,8 @@ export default function App() {
         </p>
       </section>
 
-      <section className="app-card">
-        <h2>{t('name')}</h2>
-        <p>Jane Doe</p>
-
-        <h2>{t('assignments')}</h2>
-        <p>{t('professional experience')}</p>
+      <section className="app-cards">
+        <CardsStack />
       </section>
     </div>
   );
