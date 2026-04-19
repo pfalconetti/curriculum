@@ -1,6 +1,6 @@
 // ref: https://codesandbox.io/s/pie-chart-with-customized-active-shape-y93si?file=/src/App.tsx:2340-2344
 
-import React, { useCallback, useState } from "react";
+import React from "react";
 import { PieChart, Pie, Sector } from "recharts";
 import data from "../../assets/data/simpleDonutData.json";
 
@@ -78,18 +78,9 @@ const renderActiveShape = (props: any) => {
 };
 
 function SimpleDonut() {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const onPieEnter = useCallback(
-    (_: any, index: any) => {
-      setActiveIndex(index);
-    },
-    [setActiveIndex]
-  );
-
   return (
     <PieChart width={400} height={400}>
       <Pie
-        activeIndex={activeIndex}
         activeShape={renderActiveShape}
         data={data}
         cx={200}
@@ -98,7 +89,6 @@ function SimpleDonut() {
         outerRadius={80}
         fill="#8884d8"
         dataKey="value"
-        onMouseEnter={onPieEnter}
       />
     </PieChart>
   );
